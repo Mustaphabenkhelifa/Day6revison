@@ -1,0 +1,68 @@
+// function n.1 with for
+function iterateandlogWithfor(n){
+    var msg=""
+    for(var i=0;i<n;i++){
+        if(i%2===0){
+            console.log(msg=i+" is even")
+        }
+        else{
+            console.log(msg=i+" is odd")
+        }
+    }
+}
+// function n.1 with while
+function iterateandlogWithwhile(n){
+    var msg=""
+    var i=0
+    while(i<n){
+        if(i%2===0){
+            console.log(msg=i+" is even")
+            i++
+        }
+        else{
+            console.log(msg=i+" is odd")
+            i++
+        }
+    }
+}
+// function n.2 with for 
+function reverseIterateAndLogwithfor(n){
+    var msg=""
+    for(var i=n;i<n;n--){
+        if(n%2===0){
+            msg=msg +i+" is even"
+            console.log(msg)
+        }
+        else{
+            msg=msg + i+" is odd"
+            console.log(msg)
+        }
+    }
+    return msg
+}
+//function n.2 with while
+function reverseIterateAndLogwithwhile(n){
+    var msg=""
+    var i=n-1
+    while(i<n){
+        if(n%2===0){
+            msg=i+" is even"
+            console.log(msg)
+            i++;
+        }
+        else{
+            msg=i+" is odd"
+            console.log(msg)
+            i++;
+        }
+    }
+    return msg
+}
+// function n.2 with recursion
+function reverseIterateAndLogRecursively(n){
+     
+
+}
+
+//function n.3 with for
+
