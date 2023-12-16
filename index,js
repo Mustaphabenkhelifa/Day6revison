@@ -28,7 +28,7 @@ function iterateandlogWithwhile(n){
 // function n.2 with for 
 function reverseIterateAndLogwithfor(n){
     var msg=""
-    for(var i=n;i<n;n--){
+    for(var i=0;i;n--){
         if(n%2===0){
             msg=msg +i+" is even"
             console.log(msg)
@@ -58,11 +58,49 @@ function reverseIterateAndLogwithwhile(n){
     }
     return msg
 }
-// function n.2 with recursion
-function reverseIterateAndLogRecursively(n){
-     
+//function divide
+function weirdDivisionWithFor(n) {
+    var result=""
+    for (var i = 0; i <=n; i++) {
+        if (n%3===0){
+            return result="julia"
+        }
+        else if (n%5===0){
+            return result="james"
+        }
+        else if(n%3===0 && n%5===0){
+            return result="juliajames"
+        }
+        else if(n%3!==0 || n%5!==0){
+            return result=n
+        }
+    }
+    return result
+    }
 
+//function n.4 with for 
+function laugh(number){
+    var string=""
+    for(var i=0;i<number;i++){ 
+        string=string +"ha"
+    }
+    return string
 }
-
-//function n.3 with for
-
+// function laugh with while
+function laugh(number){
+    var string=""
+    var i=0
+    while(i<number){
+        string=string +"ha"
+        i++;
+    }
+    return string
+}
+// function laugh with recursion
+function laugh(n){
+    var str=""
+    if(n>0){
+        return str=str+"ha"
+    }
+    return str+ laugh(n-1)
+}
